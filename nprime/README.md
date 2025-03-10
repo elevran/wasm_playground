@@ -66,7 +66,7 @@ Using Extism in Go uses `wazero` as the WASM runtime. This is likely sufficient 
  experiments below. The main advantage seems to be indsutrial use (e.g., by
  [Cloudflare](https://blog.cloudflare.com/python-workers/) and active porting
  of [common libraries](https://pyodide.org/en/stable/development/new-packages.html)
- to WASI so they can be used  from WASM).
+ to WASI so they can be used from WASM).
 
 ## Javascript
 
@@ -94,7 +94,7 @@ A WASI enabled QuickJS WASM binary can be downloaded from the QuickJS-ng site.
  For this experiment, I used [v0.8.0](https://github.com/quickjs-ng/quickjs/releases/download/v0.8.0/qjs-wasi.wasm).
 
 The original JS code needed minor modifications to make it run in WASM (see
- [caveat](#caveat) below for rational). The checked in code has these already.
+ [caveat](#caveat) below for rationale). The checked-in code has these already.
 
 - There is no `process` package so access to `process.argv` is undefined.
  QuickJS has an alternative called `scriptArgs` that can be used.
